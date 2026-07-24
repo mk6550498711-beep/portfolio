@@ -105,11 +105,11 @@ function erase(){
     }
 
 }
-const menuBtn = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
+const menuIcon = document.querySelector("#menu-icon");
+const navbar = document.querySelector(".navbar");
 
-menuBtn.onclick = () => {
-    navLinks.classList.toggle("active");
+menuIcon.onclick = () => {
+    navbar.classList.toggle("active");
 };
 
 typing.textContent="";
