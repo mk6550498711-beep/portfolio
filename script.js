@@ -56,10 +56,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Typing Effect
 const text = [
-    "Sofwear Engineering",
+    "Software Engineering",
     "Web Developer",
-
-    "AI/ML"
+    
+    "AI /ML"
 ];
 
 let index = 0;
