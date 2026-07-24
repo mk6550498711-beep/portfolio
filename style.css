@@ -191,10 +191,11 @@ section{
         background:#081b29;
         flex-direction:column;
         padding:20px;
+        z-index:1001;
     }
 
     .navbar.active{
-        display:flex;
+        display:flex !important;
     }
 
     .navbar a{
