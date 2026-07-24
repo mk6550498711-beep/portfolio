@@ -174,3 +174,28 @@ section{
 }
 
 }
+/* Mobile */
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #0f172a;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
