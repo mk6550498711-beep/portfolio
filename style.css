@@ -745,3 +745,46 @@ section{
     }
 
 }
+/* Three line menu icon */
+#menu-icon {
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+
+/* Navbar links ko initially hide karo */
+.navbar {
+    position: absolute;
+    top: 100%;
+    right: 30px;
+
+    width: 220px;
+    padding: 15px;
+
+    background: #071a26;
+
+    display: none;
+    flex-direction: column;
+
+    border-radius: 10px;
+}
+
+/* JS se ye class add hogi */
+.navbar.active {
+    display: flex;
+}
+
+/* Menu links */
+.navbar a {
+    display: block;
+    font-size: 25px;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #08a8ee;
+}
