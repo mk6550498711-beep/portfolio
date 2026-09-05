@@ -1,4 +1,4 @@
-/* Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *{
@@ -174,8 +174,6 @@ section{
 }
 
 }
-/*========== ABOUT ==========*/
-
 .about {
     display: flex;
     justify-content: center;
@@ -213,7 +211,6 @@ section{
     display: inline-block;
     margin-top: 15px;
 }
-/*========== SKILL PROGRESS BARS ==========*/
 
 .skills {
     background: var(--bg-color);
@@ -290,8 +287,6 @@ section{
     }
 }
 
-/* Mobile */
-
 @media (max-width: 768px) {
 
     .skills-content h2 {
@@ -304,9 +299,6 @@ section{
     }
 
 }
-
-
-/*========== PROJECTS ==========*/
 
 .projects {
     background: var(--second-bg);
@@ -365,9 +357,6 @@ section{
 .project-box .btn {
     display: inline-block;
 }
-
-/* Mobile Projects */
-
 @media (max-width: 768px) {
 
     .projects-content h2 {
@@ -379,8 +368,6 @@ section{
     }
 
 }
-/*========== PROJECTS ==========*/
-
 .projects {
     background: var(--second-bg);
 }
@@ -464,8 +451,6 @@ section{
     }
 
 }
-/*port foliyo*/
-/*========== PROJECTS ==========*/
 
 #projects {
     background: var(--second-bg);
@@ -502,9 +487,6 @@ section{
     transform: translateY(-10px);
     box-shadow: 0 0 25px var(--main-color);
 }
-
-/* Project Image */
-
 .project-box img {
     width: 100%;
     height: 180px;
@@ -519,8 +501,6 @@ section{
     transform: scale(1.03);
 }
 
-/* Project Information */
-
 .project-info h3 {
     font-size: 25px;
     margin-bottom: 12px;
@@ -534,7 +514,6 @@ section{
     margin-bottom: 20px;
 }
 
-/* Project Buttons */
 
 .project-info .btn {
     display: inline-block;
@@ -565,7 +544,6 @@ section{
     }
 
 }
-/*========== CONTACT ==========*/
 
 .contact {
     background: var(--bg-color);
@@ -661,7 +639,6 @@ section{
     transform: translateY(-5px);
 }
 
-/* Mobile Contact */
 
 @media (max-width: 768px) {
 
@@ -679,7 +656,6 @@ section{
     }
 
 }
-/*========== FOOTER ==========*/
 
 .footer {
     background: var(--second-bg);
@@ -734,7 +710,6 @@ section{
     transform: translateY(-5px);
 }
 
-/* Mobile Footer */
 
 @media (max-width: 768px) {
 
@@ -745,7 +720,6 @@ section{
     }
 
 }
-/* Three line menu icon */
 #menu-icon {
     font-size: 35px;
     color: white;
@@ -753,7 +727,6 @@ section{
     display: block;
 }
 
-/* Navbar links ko initially hide karo */
 .navbar {
     position: absolute;
     top: 100%;
@@ -770,12 +743,9 @@ section{
     border-radius: 10px;
 }
 
-/* JS se ye class add hogi */
 .navbar.active {
     display: flex;
 }
-
-/* Menu links */
 .navbar a {
     display: block;
     font-size: 25px;
@@ -787,4 +757,45 @@ section{
 .navbar a:hover,
 .navbar a.active {
     color: #08a8ee;
+}
+
+#menu-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    #menu-icon {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 20px;
+
+        width: 200px;
+        padding: 15px;
+
+        background: #071a26;
+
+        display: none;
+        flex-direction: column;
+
+        border-radius: 10px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        font-size: 22px;
+        padding: 10px;
+        color: white;
+    }
 }
